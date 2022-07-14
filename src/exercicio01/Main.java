@@ -4,9 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
-
         //criando o primeiro Pais referencia para constar vizinhança ou não
         Pais nome1 = new Pais("BRA","Brasil","América do Sul",212600000,8516000);
         System.out.println();
@@ -74,13 +71,7 @@ public class Main {
         nome3.paisesDoContinente();
 
 
-
-
-
-
     }
-
-
 
 
 }
