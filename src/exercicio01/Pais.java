@@ -13,8 +13,6 @@ public class Pais {
 
 
 //criando o construtor
-
-
     public Pais(String composicaoIso, String nomePais, String nomeContinente, int tamPop, double tamPais) {
         this.composicaoIso = composicaoIso;
         this.nomePais = nomePais;
@@ -40,7 +38,7 @@ public class Pais {
     }
 
     public void paisesDoContinente(){
-        System.out.println("O pais informado tem os seguintes países como seus vizinhos:");
+        System.out.println("Portanto, o pais informado "+getNomePais()+" tem os seguintes países como seus vizinhos:");
         for(Pais pais : paisesDoContinente) //o argumento : significa que dentro de ...
             System.out.println(pais.getNomePais());
     }
@@ -49,7 +47,6 @@ public class Pais {
         return this.getTamPop() / this.getTamPais();
 
     }
-
 
 
 
