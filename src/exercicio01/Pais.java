@@ -22,6 +22,12 @@ public class Pais {
     }
 
     //criando metodos para uso na classe
+
+    public void adicionarPaisContinente(Pais pais){
+        this.paisesDoContinente.add(pais);
+
+    }
+
     public void identificaVizinhos (Pais infPais){ //infoPais é a variavel, e o Pais é tipo que nesse caso é a propria classe Pais.java
         if(this.paisesDoContinente.contains(infPais)){ //contains faz uma verificação se infPais lançado, esta na Set list
             System.out.println("O país "+infPais.getNomePais()+" faz fronteira e é vizinho");
@@ -29,11 +35,6 @@ public class Pais {
         }else {
             System.out.println("O país "+infPais.getNomePais()+" não faz fronteira e não é vizinho");
         }
-
-    }
-
-    public void adicionarPaisContinente(Pais pais){
-        this.paisesDoContinente.add(pais);
 
     }
 
@@ -47,7 +48,6 @@ public class Pais {
         return this.getTamPop() / this.getTamPais();
 
     }
-
 
 
 ///metodos get e set
